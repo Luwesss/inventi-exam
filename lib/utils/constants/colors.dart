@@ -29,10 +29,5 @@ class InventiExamColors {
   static const Color warning = Color(0xFFF57C00);
   static const Color info = Color(0xFF1976D2);
 
-  // Shadows
-  static const BoxShadow defaultShadow = BoxShadow(
-    color: Color(0x291C5196), // 16% opacity
-    offset: Offset(2, 2),
-    blurRadius: 10,
-  );
+  static const Color shadow = Color(0x291C5196);
 }
