@@ -46,9 +46,15 @@ class HomeQuickButton extends StatelessWidget {
                 size: InventiExamSizes.iconSize,
               ),
               SizedBox(height: InventiExamSizes.smallSpacing),
-              Text(
-                HomeScreenTexts.homeQuickButtonDesc,
-                style: Theme.of(context).textTheme.labelMedium!,
+              Flexible(
+                child: Text(
+                  HomeScreenTexts.homeQuickButtonDesc,
+                  style: Theme.of(context).textTheme.labelMedium!,
+                  overflow:
+                      TextOverflow.ellipsis, 
+                  maxLines: 2, 
+                  softWrap: true,
+                ),
               ),
             ],
           ),
