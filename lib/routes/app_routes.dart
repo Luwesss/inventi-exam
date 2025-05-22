@@ -8,7 +8,7 @@ import 'package:inventi_exam/routes/routes.dart';
 class AppRoutes {
   static GoRouter router() {
     return GoRouter(
-      initialLocation: InventiExamRoutes.home,
+      initialLocation: InventiExamRoutes.signIn,
       routes: [
         // - Home
         GoRoute(

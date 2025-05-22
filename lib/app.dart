@@ -12,7 +12,6 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: InventiExamAppTheme.lightTheme,
-      darkTheme: InventiExamAppTheme.darkTheme,
       routerConfig: AppRoutes.router(),
     );
   }
