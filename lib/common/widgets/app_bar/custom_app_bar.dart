@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:inventi_exam/common/widgets/shimmer/shimmer_box.dart';
 
+import 'package:inventi_exam/common/widgets/shimmer/shimmer_box.dart';
 import 'package:inventi_exam/utils/constants/colors.dart';
 import 'package:inventi_exam/utils/constants/image_strings.dart';
 import 'package:inventi_exam/utils/constants/sizes.dart';
@@ -36,12 +36,13 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       toolbarHeight: InventiExamSizes.appbarHeight,
       title: isLoading
           ? Padding(
-            padding: const EdgeInsets.only(right: InventiExamSizes.smallSideMargins),
-            child: const ShimmerBox(
+              padding: const EdgeInsets.only(
+                  right: InventiExamSizes.smallSideMargins),
+              child: const ShimmerBox(
                 width: double.infinity,
                 height: 36.62,
               ),
-          )
+            )
           : SvgPicture.asset(
               InventiExamImages.inventiLogo,
               width: 122.33,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:inventi_exam/common/widgets/buttons/custom_text_button.dart';
 import 'package:inventi_exam/common/widgets/spacing/custom_spacer.dart';
 import 'package:inventi_exam/features/authentication/screens/login/widgets/login_form.dart';
@@ -14,8 +15,8 @@ class LoginComponentContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(
-          horizontal: InventiExamSizes.sideMargins),
+      padding:
+          const EdgeInsets.symmetric(horizontal: InventiExamSizes.sideMargins),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.center,

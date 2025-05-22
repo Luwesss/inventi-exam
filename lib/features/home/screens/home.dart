@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:inventi_exam/common/widgets/app_bar/custom_app_bar.dart';
+import 'package:inventi_exam/common/widgets/snackbar/custom_snackbar.dart';
 import 'package:inventi_exam/features/home/controllers/home_cubit.dart';
 import 'package:inventi_exam/features/home/controllers/home_state.dart';
 import 'package:inventi_exam/features/home/screens/widgets/home_container_label.dart';
@@ -28,13 +31,7 @@ class HomeScreen extends StatelessWidget {
         child: BlocListener<HomeCubit, HomeState>(
           listener: (context, state) {
             if (state is HomeError) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(state.message),
-                  backgroundColor: Colors.red,
-                  behavior: SnackBarBehavior.floating,
-                ),
-              );
+              CustomSnackBar.show(context, state.message);
             }
           },
           child: BlocBuilder<HomeCubit, HomeState>(

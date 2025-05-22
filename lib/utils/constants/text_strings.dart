@@ -11,6 +11,7 @@ class LoginScreenTexts {
   static const String login = "Login";
   static const String notSubscriber = "Don't have an account?";
   static const String subscribeHere = "Sign up here";
+  static const String fillAllFields = "Please fill in all fields";
 }
 
 class HomeScreenTexts {

@@ -1,6 +1,5 @@
+import 'package:inventi_exam/data/services/home_service.dart';
 import 'package:inventi_exam/features/home/models/random_string_model.dart';
-
-import '../services/home_service.dart';
 
 class HomeRepository {
   final HomeService service;

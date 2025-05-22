@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:inventi_exam/utils/constants/colors.dart';
 import 'package:inventi_exam/utils/constants/sizes.dart';
 import 'package:inventi_exam/utils/constants/text_strings.dart';
@@ -29,7 +30,8 @@ class HomeQuickButton extends StatelessWidget {
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(InventiExamSizes.cornerRadiusLg),
+            borderRadius:
+                BorderRadius.circular(InventiExamSizes.cornerRadiusLg),
           ),
           elevation: 0,
         ),

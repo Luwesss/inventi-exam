@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:inventi_exam/utils/constants/image_strings.dart';
 
 class LoginBackgroundImage extends StatelessWidget {
