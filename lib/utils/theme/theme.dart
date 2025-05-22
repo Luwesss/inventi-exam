@@ -29,21 +29,4 @@ class InventiExamAppTheme {
     inputDecorationTheme:
         InventiExamTextFormFieldTheme.lightInputDecorationTheme,
   );
-
-  static ThemeData darkTheme = ThemeData(
-    useMaterial3: true,
-    fontFamily: 'Poppins',
-    brightness: Brightness.dark,
-    primaryColor: Colors.blue,
-    textTheme: InventiExamTextTheme.darkTextTheme,
-    chipTheme: InventiExamChipTheme.darkChipTheme,
-    scaffoldBackgroundColor: Colors.black,
-    appBarTheme: InventiExamAppBarTheme.darkAppBarTheme,
-    checkboxTheme: InventiExamCheckboxTheme.darkCheckboxTheme,
-    bottomSheetTheme: InventiExamBottomSheetTheme.darkBottomSheetTheme,
-    elevatedButtonTheme: InventiExamElevatedButtonTheme.darkElevatedButtonTheme,
-    outlinedButtonTheme: InventiExamOutlinedButtonTheme.darkOutlinedButtonTheme,
-    inputDecorationTheme:
-        InventiExamTextFormFieldTheme.darkInputDecorationTheme,
-  );
 }

@@ -3,8 +3,10 @@ class GlobalTexts {}
 
 class LoginScreenTexts {
   static const String loginTitle = "Sign in";
-  static const String email = "Email Address";
-  static const String password = "Password";
+  static const String emailFieldLabel = "Email Address";
+  static const String emailFieldHint = "Enter your email here...";
+  static const String passwordFieldLabel = "Password";
+  static const String passwordFieldHint = "Enter your password here...";
   static const String forgotPassword = "Forgot Password?";
   static const String login = "Login";
   static const String notSubscriber = "Don't have an account?";
