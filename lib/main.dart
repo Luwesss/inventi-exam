@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+
 import 'package:inventi_exam/app.dart';
 import 'package:inventi_exam/data/repositories/home_repository.dart';
 import 'package:inventi_exam/data/services/home_service.dart';
@@ -12,12 +12,6 @@ Future<void> main() async {
       WidgetsFlutterBinding.ensureInitialized();
 
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-
-  try {
-    await dotenv.load(fileName: ".env");
-  } catch (e) {
-    print("Failed to initialize ENV variables: : $e");
-  }
 
   runApp(
     MultiBlocProvider(

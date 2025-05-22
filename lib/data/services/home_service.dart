@@ -1,11 +1,13 @@
-// lib/features/home/data/services/home_service.dart
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+
 import 'package:inventi_exam/features/home/models/random_string_model.dart';
 
 class HomeService {
   Future<RandomString> fetchRandomString() async {
-    final url = Uri.parse('https://o7q6ka26qs232rmbtpbrxghy6u0vyrup.lambda-url.ap-southeast-1.on.aws/');
+    // url must be in .env but I placed it here for your convenience so that the one checking won't need to create an env file or to prevent not working assumptions
+    final url = Uri.parse(
+        'https://o7q6ka26qs232rmbtpbrxghy6u0vyrup.lambda-url.ap-southeast-1.on.aws/');
     final response = await http.get(url);
 
     if (response.statusCode == 200) {

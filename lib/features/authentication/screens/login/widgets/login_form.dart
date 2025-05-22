@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'package:go_router/go_router.dart';
+
 import 'package:inventi_exam/common/widgets/buttons/custom_filled_button.dart';
 import 'package:inventi_exam/common/widgets/buttons/custom_text_button.dart';
 import 'package:inventi_exam/common/widgets/input_fields/custom_text_field.dart';
+import 'package:inventi_exam/common/widgets/snackbar/custom_snackbar.dart';
 import 'package:inventi_exam/common/widgets/spacing/custom_spacer.dart';
 import 'package:inventi_exam/routes/routes.dart';
 import 'package:inventi_exam/utils/constants/colors.dart';
@@ -24,9 +27,7 @@ class _LoginFormState extends State<LoginForm> {
     final password = passwordController.text.trim();
 
     if (email.isEmpty || password.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Please fill in all fields')),
-      );
+      CustomSnackBar.show(context, LoginScreenTexts.fillAllFields);
       return;
     }
 

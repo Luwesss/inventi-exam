@@ -16,14 +16,16 @@ class SpinBars extends StatefulWidget {
   State<SpinBars> createState() => _SpinBarsState();
 }
 
-class _SpinBarsState extends State<SpinBars> with SingleTickerProviderStateMixin {
+class _SpinBarsState extends State<SpinBars>
+    with SingleTickerProviderStateMixin {
   static const int _itemCount = 12;
   late AnimationController _controller;
 
   @override
   void initState() {
     super.initState();
-    _controller = AnimationController(vsync: this, duration: widget.duration)..repeat();
+    _controller = AnimationController(vsync: this, duration: widget.duration)
+      ..repeat();
   }
 
   @override
@@ -34,8 +36,8 @@ class _SpinBarsState extends State<SpinBars> with SingleTickerProviderStateMixin
 
   @override
   Widget build(BuildContext context) {
-    final double barWidth = widget.size * 0.1; 
-    final double barHeight = widget.size * 0.25; 
+    final double barWidth = widget.size * 0.1;
+    final double barHeight = widget.size * 0.25;
 
     return Center(
       child: SizedBox(
@@ -54,7 +56,8 @@ class _SpinBarsState extends State<SpinBars> with SingleTickerProviderStateMixin
                     alignment: Alignment.topCenter,
                     child: FadeTransition(
                       opacity: Tween(begin: 0.0, end: 1.0)
-                          .chain(CurveTween(curve: Interval(delay, delay + 0.25)))
+                          .chain(
+                              CurveTween(curve: Interval(delay, delay + 0.25)))
                           .animate(_controller),
                       child: Container(
                         width: barWidth,
