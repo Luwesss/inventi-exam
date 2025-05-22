@@ -38,7 +38,7 @@ class LoginComponentContainer extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                width: 4,
+                width: InventiExamSizes.smallSpacing,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8),
