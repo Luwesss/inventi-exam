@@ -3,5 +3,6 @@ class InventiExamImages {
   // -- Logos
   static const String inventiLogo = "assets/logos/inventi-logo.png";
   static const String poweredByInventiLogo =
-      "assets/logos/powered-by-inventi.png";
+      "assets/images/powered-by-inventi.png";
+  static const String loginBackground = "assets/images/login-background.jpg";
 }

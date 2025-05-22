@@ -44,5 +44,6 @@ flutter:
     - assets/logos/
     - assets/icons/
     - assets/fonts/
+    - assets/images/
     - .env
   #--------------- LOCAL FONTS ------------------#
